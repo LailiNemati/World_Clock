@@ -12,15 +12,28 @@ function updateTime() {
     );
   }
 
-  // Mashhad
-  let mashhadElement = document.querySelector("#mashhad");
-  if (mashhadElement) {
-    let mashhadDateElement = mashhadElement.querySelector(".date");
-    let mashhadTimeElement = mashhadElement.querySelector(".time");
-    let mashhadTime = moment().tz("Asia/Mashhad");
+  // Riyadh
+  let riyadhElement = document.querySelector("#riyadh");
+  if (riyadhElement) {
+    let riyadhDateElement = riyadhElement.querySelector(".date");
+    let riyadhTimeElement = riyadhElement.querySelector(".time");
+    let riyadhTime = moment().tz("Asia/Riyadh");
 
-   mashhadDateElement.innerHTML = mashhadTime.format("MMMM	Do YYYY");
-   mashhadTimeElement.innerHTML = mashhadTime.format(
+   riyadhDateElement.innerHTML = riyadhTime.format("MMMM	Do YYYY");
+   riyadhTimeElement.innerHTML = riyadhTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  
+// Moscow
+  let moscowElement = document.querySelector("#moscow");
+  if (moscowElement) {
+    let moscowDateElement = moscowElement.querySelector(".date");
+    let moscowTimeElement = moscowElement.querySelector(".time");
+    let moscowTime = moment().tz("Asia/Moscow");
+
+   moscowDateElement.innerHTML = moscowTime.format("MMMM	Do YYYY");
+   moscowTimeElement.innerHTML = moscowTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
