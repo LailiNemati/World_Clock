@@ -1,26 +1,26 @@
 function updateTime() {
-// Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+// Herat
+  let heratElement = document.querySelector("#herat");
+  if (heratElement) {
+    let heratDateElement = heratElement.querySelector(".date");
+    let heratTimeElement = heratElement.querySelector(".time");
+    let heratTime = moment().tz("Asia/Herat");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+   heratDateElement.innerHTML = heratTime.format("MMMM	Do YYYY");
+   heratTimeElement.innerHTML = heratTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  // Mashhad
+  let mashhadElement = document.querySelector("#mashhad");
+  if (mashhadElement) {
+    let mashhadDateElement = mashhadElement.querySelector(".date");
+    let mashhadTimeElement = mashhadElement.querySelector(".time");
+    let mashhadTime = moment().tz("Asia/Mashhad");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+   mashhadDateElement.innerHTML = mashhadTime.format("MMMM	Do YYYY");
+   mashhadTimeElement.innerHTML = mashhadTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
