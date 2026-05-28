@@ -1,26 +1,26 @@
 function updateTime() {
-// Herat
-  let heratElement = document.querySelector("#herat");
-  if (heratElement) {
-    let heratDateElement = heratElement.querySelector(".date");
-    let heratTimeElement = heratElement.querySelector(".time");
-    let heratTime = moment().tz("Asia/Herat");
+//Tehran
+  let tehranElement = document.querySelector("#tehran");
+  if (tehranElement) {
+    let tehranDateElement = tehranElement.querySelector(".date");
+    let tehranTimeElement = tehranElement.querySelector(".time");
+    let tehranTime = moment().tz("Asia/Tehran");
 
-   heratDateElement.innerHTML = heratTime.format("MMMM	Do YYYY");
-   heratTimeElement.innerHTML = heratTime.format(
+   tehranDateElement.innerHTML = tehranTime.format("MMMM	Do YYYY");
+   tehranTimeElement.innerHTML = tehranTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Riyadh
-  let riyadhElement = document.querySelector("#riyadh");
+  // Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
   if (riyadhElement) {
-    let riyadhDateElement = riyadhElement.querySelector(".date");
-    let riyadhTimeElement = riyadhElement.querySelector(".time");
-    let riyadhTime = moment().tz("Asia/Riyadh");
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
 
-   riyadhDateElement.innerHTML = riyadhTime.format("MMMM	Do YYYY");
-   riyadhTimeElement.innerHTML = riyadhTime.format(
+   tokyoDateElement.innerHTML = tokyoTime.format("MMMM	Do YYYY");
+   tokyoTimeElement.innerHTML = tokyoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
